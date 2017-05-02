@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/settings_title">
+
+    <Preference
+        android:key="@string/settings_guardian_api_key"
+        android:title="@string/settings_guardian_api_title" />
+
+    <Preference
+        android:key="@string/settings_get_api_key"
+        android:title="@string/settings_get_api_key_title" />
+
+    <EditTextPreference
+        android:defaultValue="@string/settings_enter_api_key"
+        android:inputType="textVisiblePassword"
+        android:key="@string/settings_api_key_key"
+        android:selectAllOnFocus="true"
+        android:title="@string/settings_api_key_title" />
+
+    <ListPreference
+        android:defaultValue="@string/settings_order_by_default"
+        android:entries="@array/settings_order_by_labels"
+        android:entryValues="@array/settings_order_by_values"
+        android:key="@string/settings_order_by_key"
+        android:title="@string/settings_order_by_label" />
+
+</PreferenceScreen>
